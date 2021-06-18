@@ -28,30 +28,40 @@ function isValidEmail(email){
 
 
 }
-//function to check if reqrd fiels have data
-function checkRequired(inputArray){
-    inputArray.forEach(function(input){
-        if(input.value===''){
-            showError(input,`${getField(input)}is require`);// other method(input,input.id+'is reqrd)
-        }else{
-            showSuccess(input);
-        }
-    });
-
-}
-//function to get the id of the input field with proper case
-function getField(input){
-    return input.id.charAt(0).toUpperCase() +input.id.slice(1)
-
-}
 
 //event listner
 form.addEventListener('submit',function(e){
     e.preventDefault();
     
-    checkRequired([username,email,password,password2]);
+    if(username.value===''){
+        //alert("Username can't be empty");we wont use popup msg bcz its old fashion
+        showError(username,'Username is required');
 
-    
+    }else{
+        showSuccess(username);
+    }
+    if(email.value===''){
+        showError(email,'email is required');
+
+    }else if(!isValidEmail(email.value)){
+        showError(email,'Email is ivalid');
+
+    }
+    else{
+        showSuccess(email);
+    }
+    if(password.value===''){
+        showError(password,'Password is required');
+
+    }else{
+        showSuccess(password);
+    }
+    if(password2.value===''){
+        showError(password2,'Confirm Password is required');
+
+    }else{
+        showSuccess(password2);
+    }
 })
 
 
