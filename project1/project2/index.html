@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" style.css="">
+    <title>Movie Theater</title>
+    
+</head>
+<body>
+      <!--this is the select box-->
+     <div class="select-container">
+       
+       <label for="">Select your movie</label>
+       <select  id="movie"> <!--for selection box  -->
+         <option value="20">Top Gun 2</option>
+         <option value="7">Jumanji</option>
+         <option value="10">Avengers</option>
+         <option value="10">Iron Man</option>
+         <option value="5">Braveheart</option>
+        </select>
+     </div>
+     <!--this the legend displaying available selected ad occupied seat formatting-->
+
+     <ul class="legend">
+         <!--Available List-->
+         <li>     <!--listitem-->
+             <div class="seat"></div>
+             <small>Available</small>
+         </li>
+
+          <!--Selected List-->
+          <li>     <!--listitem-->
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+         <!--Occupied List-->
+         <li>     <!--listitem-->
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+   
+     </ul>
+     <!--the container for displaying screen and seating chart-->
+      <div class="container">
+      <div class="screen"></div>
+      <!--row1-->
+      <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+      </div>
+       <!--row2-->
+       <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+     <!--row3-->
+     <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+     <!--row4-->
+     <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+     <!--row5-->
+     <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+     <!--row6-->
+     <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+    </div>
+
+    </div>
+    <!--Total seats and prizes using oaragram.class-->
+    <p class="totals">You've selected <span id="count">0</span> seats.Your total is $<span id="total">0</span></p>  <!--span id  to select-->
+
+<script src="script.js"></script>
+</body>
+</html>
